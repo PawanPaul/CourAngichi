@@ -31,5 +31,30 @@
         return val
        }
     });
+    (function () {
+        'use strict';
+    
+        angular.module('LunchMenu', [])
+        .controller('LunchControl', function($scope){
+         $scope.end = 0;
+         $scope.orderitem = "";
+         var i = 0;
+         $scope.ender = function () {
+             end = 1;
+             thx = "Thank you!";
+             return thx
+
+         }
+         $scope.Update = function(){
+            var totNV = $scope.orderitem;
+            return totNV
+        }
+         $scope.order = function () {
+
+             }
+         }
+        });
+    
+    })();
 
 })();
