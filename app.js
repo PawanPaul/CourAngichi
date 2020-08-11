@@ -19,8 +19,9 @@
         $scope.name = "";
         $scope.value = 0;
         $scope.NumDis = function(){
-            var totNV = stringnumcalc($scope.name);
+            var totNV = stringnumcalc();
             $scope.value = totNV;
+            return totNV
         }
 
         function stringnumcalc(string){
@@ -31,3 +32,5 @@
         return val
        }
     });
+
+})();
