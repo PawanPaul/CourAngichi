@@ -19,7 +19,7 @@
         $scope.name = "";
         $scope.value = 0;
         $scope.NumDis = function(){
-            var totNV = stringnumcalc();
+            var totNV = stringnumcalc($scope.name);
             $scope.value = totNV;
             return totNV
         }
