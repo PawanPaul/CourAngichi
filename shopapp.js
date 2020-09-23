@@ -44,7 +44,21 @@
   function listservice(){
     var service = this; 
     //I suppose this sets the service her
-    var buylist = []; 
+    var buylist = [ {name: "Cookies",
+    quantity: 5
+   },
+   {name: "Chocolate",
+    quantity: 7
+   },
+   {name: "Marshmallow",
+    quantity: 3
+   },
+   {name: "Pens",
+    quantity: 10
+   },
+   {name: "Dog Food",
+    quantity: 10
+   }]; 
     // The list listctrl deals with
     var boughtlist = [];
     //buyctrl deals with this

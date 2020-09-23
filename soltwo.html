@@ -43,6 +43,7 @@
         <button ng-click="listreveal.buyitem($index)">Buy</button> 
         <button ng-click="listreveal.removeItem($index)">Remove</button></li>
      </ul>
+     <div ng-if="listreveal.buylist.length==0">List is Empty or Everything is Bought!</div>
     </div>
 
     <!-- Already Bought List -->
@@ -51,6 +52,7 @@
      <ul>
        <li ng-repeat="item in listconfirm.boughtlist">{{item.quantity}} of {{item.name}}</li>
      </ul>
+     <div ng-if="listconfirm.boughtlist.length==0">Nothing is Bought!</div>
     </div>
   </div>
 </div>
